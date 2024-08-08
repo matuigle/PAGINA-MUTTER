@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const products = {
         cafe: {
-            img: 'ruta/a/imagen/cafe.jpg',
+            img: '2.jpeg',
             title: 'Café',
             description: 'Un delicioso café artesanal hecho con los mejores granos.',
             price: '$50'
