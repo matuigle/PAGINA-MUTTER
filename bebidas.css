@@ -53,6 +53,15 @@
     border-radius: 1em;
 }
 
+
+.cafeimg{
+    position: relative;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    aling-items: center;
+}
+
 .close {
     color: #aaa;
     float: right;
