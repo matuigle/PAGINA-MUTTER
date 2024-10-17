@@ -3,6 +3,88 @@
     color: white;
 }
 
+/* Estilos para el Sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #305744; /* Verde */
+    color: #ffcb2e; /* Amarillo */
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#sidebar.show {
+    transform: translateX(250px); /* Mueve el sidebar dentro de la vista */
+    opacity: 1;
+    visibility: visible;
+}
+
+#sidebar.hide {
+    transform: translateX(-250px); /* Mueve el sidebar fuera de la vista */
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Estilos para el Header */
+#main-header {
+    background-color: #305744; /* Verde */
+    color: #ffcb2e; /* Amarillo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    animation: slideInDown 0.5s ease;
+}
+
+#main-header h1 {
+    position: relative;
+    right: 7.4em;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilos para el menú hamburguesa */
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: #ffcb2e;
+    transition: 0.3s;
+}
+
+/* Animaciones */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
 .nme {
     font-size: 2em;
     background-color: #305744;
